@@ -45,6 +45,9 @@ download_release() {
 	if [ "$OS" == "darwin" ]; then
 		OS="macOS"
 	fi
+	if [ "$ARCH" == "aarch64" ]; then
+		ARCH="arm64"
+	fi
 
 	RELEASE_FILE="jira_${version}_${OS}_${ARCH}.tar.gz"
 
